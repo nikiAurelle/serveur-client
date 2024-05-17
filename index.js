@@ -48,6 +48,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //Routes
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
 app.get("/authentificate", async (request, response) =>
 {
     let json = await Routes.Authentificate(request,response);
